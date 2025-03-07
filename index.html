@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Strategies</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            background: linear-gradient(to right, #ff7e00, #000);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #ff9500, #ff7e00);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background: #ff7e00;
+            border: none;
+            padding: 12px 24px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #ff9500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TurningPoint</div>
+        <nav>
+            <ul>
+                <li><a href="#free-material">Free Exclusives</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="free-material" class="card">
+        <h2>Free Exclusives</h2>
+        <p>Download free PDFs and resources.</p>
+        <a href="uploads/sample.pdf" download>Download Sample PDF</a>
+    </section>
+    
+    <section id="courses" class="card">
+        <h2>Courses</h2>
+        <p>Explore our in-depth courses and tutorials.</p>
+        <button onclick="location.href='courses.html'">View Courses</button>
+    </section>
+    
+    <section id="contact" class="card">
+        <h2>Get In Touch</h2>
+        <form action="#" method="POST">
+            <label for="email">Subscribe to our Newsletter:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+</body>
+</html>
+ 
